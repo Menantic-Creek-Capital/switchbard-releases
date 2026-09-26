@@ -3,26 +3,15 @@
 Switchbard is a local-first terminal workspace for tasks, pull requests, and coding agents.
 This repository hosts official binary downloads and the public issue tracker. Product source is private.
 
-## Install
+## Downloads
 
-The current public release is **v0.4.0-alpha.4**. It includes `sbt` and the compatible `sb` command
-for macOS Apple Silicon, macOS Intel, and Linux x86_64. No Rust, Node, or Python installation is needed.
-Windows and Linux ARM binaries are not available.
+Historical releases through **v0.4.0-alpha.4** have been withdrawn from public download.
+There are currently no public binary downloads. Installation instructions will be published
+with the next available release.
 
-```sh
-installer=$(mktemp)
-curl -fsSL https://raw.githubusercontent.com/benpchandler/switchbard-releases/main/install-release.sh -o "$installer"
-bash "$installer" --version v0.4.0-alpha.4
-rm -f "$installer"
-```
+[Release availability](https://github.com/Menantic-Creek-Capital/switchbard-releases/releases)
 
-The installer checks the archive's SHA-256 checksum and installs into `~/.local/bin`.
-If needed, add that directory to your PATH. To replace an existing installation, add `--replace`.
-These are alpha builds; they are not signed or notarized, and public installations do not update automatically.
-
-[All downloads and release notes](https://github.com/benpchandler/switchbard-releases/releases)
-
-## First use
+## Existing installations
 
 From your project directory, run:
 
@@ -47,15 +36,14 @@ Before upgrading, back up important task data:
 sbt --repo /path/to/project storage backup --file /path/to/backup.sqlite3
 ```
 
-[Report a problem](https://github.com/benpchandler/switchbard-releases/issues) with your `sbt build-id`,
+[Report a problem](https://github.com/Menantic-Creek-Capital/switchbard-releases/issues) with your `sbt build-id`,
 OS, terminal, and reproduction steps. Review diagnostics before sharing; they may contain local paths
 or task content. In-app bug capture creates a local task and does not post a GitHub issue.
 
 ## Licensing
 
-The historical releases hosted here, through **v0.4.0-alpha.4**, were published under MIT.
-Their binary archives and original license notices are unchanged. See [the historical MIT license](LICENSE-MIT).
-The older v0.1.1, v0.2.0, and v0.3.0 GUI builds are retained for reference; the desktop GUI is deprecated.
+The withdrawn historical releases, through **v0.4.0-alpha.4**, were published under MIT.
+The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
 Future product versions use restrictive proprietary terms. Always check the license included with the
 specific release; downloading a file does not grant permission beyond those terms.
