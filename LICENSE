@@ -1,0 +1,19 @@
+Switchbard Distribution Materials License
+
+Copyright (c) 2026 Ben Chandler. All rights reserved.
+
+Permission is granted to read and copy the documentation in this repository
+and to use, copy, and redistribute its unmodified install-release.sh script
+solely to obtain and install official Switchbard releases. Retain this notice
+with copies. No other rights are granted except as required by applicable law
+or the repository hosting service's terms.
+
+This permission applies only to the distribution documentation and installer.
+It does not license the Switchbard application or its source code. Each binary
+release remains governed by the license supplied with that release. Earlier
+MIT grants and third-party licenses remain unchanged.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL
+NOT BE LIABLE FOR CLAIMS OR DAMAGES ARISING FROM THEIR USE.
