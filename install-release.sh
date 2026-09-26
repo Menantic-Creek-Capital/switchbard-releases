@@ -65,8 +65,13 @@ base=https://github.com/benpchandler/switchbard-releases/releases
 if [[ "$version" == latest ]]; then base="$base/latest/download";
 else base="$base/download/$version"; fi
 for suffix in '' .sha256; do
-  curl --fail --location --silent --show-error --connect-timeout 15 --max-time 180 \
-    --proto '=https' --proto-redir '=https' "$base/$asset$suffix" -o "$scratch/$asset$suffix"
+  if ! curl --fail --location --silent --show-error --connect-timeout 15 --max-time 180 \
+    --proto '=https' --proto-redir '=https' "$base/$asset$suffix" -o "$scratch/$asset$suffix"; then
+    if [[ "$version" == latest ]]; then
+      fail 'could not download a stable terminal release (none may be available); check your connection or choose --version TAG from https://github.com/benpchandler/switchbard-releases/releases'
+    fi
+    fail "could not download $version; check your connection and the tag at https://github.com/benpchandler/switchbard-releases/releases"
+  fi
 done
 read -r expected filename extra < "$scratch/$asset.sha256"
 [[ "$expected" =~ ^[a-fA-F0-9]{64}$ && "$filename" == "$asset" && -z "${extra:-}" ]] || fail 'invalid release checksum file'
