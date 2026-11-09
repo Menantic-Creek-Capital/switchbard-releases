@@ -5,11 +5,12 @@ This repository hosts official binary downloads and the public issue tracker. Pr
 
 ## Downloads
 
-Historical releases through **v0.4.0-alpha.4** have been withdrawn from public download.
-There are currently no public binary downloads. Installation instructions will be published
-with the next available release.
+**Switchbard for Mac:** download the latest `.dmg` from
+[Releases](https://github.com/Menantic-Creek-Capital/switchbard-releases/releases/latest), open it and drag
+Switchbard into Applications. It is signed and notarized, and updates itself. Apple Silicon only for now.
 
-[Release availability](https://github.com/Menantic-Creek-Capital/switchbard-releases/releases)
+**Terminal (`sbt`):** releases through **v0.4.0-alpha.4** have been withdrawn. Installation instructions
+will be published with the next terminal release.
 
 ## Existing installations
 
@@ -45,8 +46,10 @@ or task content. In-app bug capture creates a local task and does not post a Git
 The withdrawn historical releases, through **v0.4.0-alpha.4**, were published under MIT.
 The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
-Future product versions use restrictive proprietary terms. Always check the license included with the
-specific release; downloading a file does not grant permission beyond those terms.
+Official builds are free to download and use, for personal or commercial work, on any number of your
+own devices, under [LICENSE-OFFICIAL-BUILDS](LICENSE-OFFICIAL-BUILDS). They may not be redistributed,
+modified or resold. The product source is private and is not licensed.
+
 The installer and documentation in this distribution repository have the separate limited permissions
 in [LICENSE](LICENSE). GitHub's automatically generated source archives contain only this distribution
 repository, not the Switchbard product source.

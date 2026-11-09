@@ -1,0 +1,76 @@
+Switchbard Proprietary License
+
+Copyright (c) 2026 Ben Chandler. All rights reserved.
+
+1. Scope and ownership
+
+This notice applies to Switchbard source code, binaries, and accompanying
+materials supplied with this notice (the "Software"), to the extent owned by
+Ben Chandler (the "Copyright Holder"). The Software is proprietary and is
+not offered under an open-source license.
+
+2. Permission required
+
+Except as expressly permitted by a separate written agreement with the
+Copyright Holder, applicable law, or the exceptions below, no permission is
+granted to use, run, copy, modify, create derivative works of, distribute,
+publish, sublicense, sell, rent, host, or otherwise exploit the Software.
+This restriction applies to both commercial and noncommercial purposes.
+
+Access to the source code or possession of a copy does not by itself grant
+any of these permissions. Installation and build instructions describe
+technical procedures and do not grant a license. Contact the Copyright
+Holder through https://github.com/benpchandler to request permission.
+
+3. Official builds
+
+Menantic Creek Capital LLC ("Menantic Creek" or the "Publisher") publishes
+official builds of the Software under license from the Copyright Holder.
+The Publisher grants you a free, worldwide, non-exclusive, non-transferable
+license to download, install and use official builds, for any lawful
+purpose, personal or commercial, on any number of devices you own or
+control. Official builds
+are the compiled binaries and apps the Publisher publishes, signed with its
+Apple Developer ID where they run on macOS, including the releases at
+https://github.com/Menantic-Creek-Capital/switchbard-releases and the
+updates those builds install.
+
+This license does not permit you to:
+
+  (a) redistribute, sell, rent, lease, sublicense or host an official
+      build, or any copy of it, for others;
+  (b) modify an official build, or remove or alter its notices; or
+  (c) reverse engineer, decompile or disassemble an official build, except
+      to the extent applicable law permits despite this restriction.
+
+This license ends automatically if you break its terms. When it ends, stop
+using the official builds and delete your copies. It grants no rights in
+the source code.
+
+4. Existing rights and third-party components
+
+This notice does not revoke or limit rights previously granted under the
+MIT License for earlier copies or portions of the Software. Those rights
+remain subject to the applicable MIT terms. They do not grant rights to
+new material supplied only under this notice.
+
+Third-party components remain subject to their own licenses and copyright
+notices. This notice does not replace, restrict, or remove those licenses
+or notices. It also does not restrict rights granted under the applicable
+terms of a repository hosting service, including GitHub's rights to view
+and fork a public repository through its service.
+
+5. Other rights
+
+No trademark rights are granted. This notice does not assert ownership of
+your data or of work you independently create using the Software.
+
+6. Disclaimer
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
