@@ -6,7 +6,7 @@ This repository hosts official binary downloads and the public issue tracker. Pr
 ## Downloads
 
 **Switchbard for Mac:** download the latest `.dmg` from
-[Releases](https://github.com/Menantic-Creek-Capital/switchbard-releases/releases/latest), open it and drag
+[Releases](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest), open it and drag
 Switchbard into Applications. It is signed and notarized, and updates itself. Apple Silicon only for now.
 
 **Terminal (`sbt`):** releases through **v0.4.0-alpha.4** have been withdrawn. Installation instructions
@@ -37,7 +37,7 @@ Before upgrading, back up important task data:
 sbt --repo /path/to/project storage backup --file /path/to/backup.sqlite3
 ```
 
-[Report a problem](https://github.com/Menantic-Creek-Capital/switchbard-releases/issues) with your `sbt build-id`,
+[Report a problem](https://github.com/Menantic-Creek-Capital/tuile-releases/issues) with your `sbt build-id`,
 OS, terminal, and reproduction steps. Review diagnostics before sharing; they may contain local paths
 or task content. In-app bug capture creates a local task and does not post a GitHub issue.
 
