@@ -1,55 +1,81 @@
-# Switchbard downloads
+# tuile
 
-Switchbard is a local-first terminal workspace for tasks, pull requests, and coding agents.
-This repository hosts official binary downloads and the public issue tracker. Product source is private.
+**One place for all your work, and every agent doing it.**
 
-## Downloads
+tuile is a desktop app for planning projects, writing docs and answering your agents' questions.
+Hand a task to Claude Code, Codex or any model through [Pi](https://github.com/badlogic/pi-mono), and switch whenever you like.
+Your tasks and pages stay on your Mac.
 
-**Switchbard for Mac:** download the latest `.dmg` from
-[Releases](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest), open it and drag
-Switchbard into Applications. It is signed and notarized, and updates itself. Apple Silicon only for now.
+This repository holds the official downloads and the public issue tracker.
+The product source is private.
 
-**Terminal (`sbt`):** releases through **v0.4.0-alpha.4** have been withdrawn. Installation instructions
-will be published with the next terminal release.
+## Download for Mac
 
-## Existing installations
+1. Download the newest `tuile-<version>-macos-arm64.dmg` from [the latest release](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest).
+2. Open it and drag **Tuile** to Applications.
+3. Open Tuile from Applications.
 
-From your project directory, run:
+tuile needs a Mac with Apple silicon and macOS 13 or later.
+The app is signed and notarized by Apple, so it opens without a warning.
+It checks for a new version every four hours and installs it when you click **Update ready** or next quit.
+
+There is no download for Intel Macs, Linux or Windows yet.
+
+## The first run
+
+The first time you open tuile it asks three things:
+
+1. **Set up this Mac.** tuile checks for its `tuile` command, Apple's command line tools and Pi, the agent it runs, and adds what is missing.
+2. **Open your first workspace.** Choose a folder, usually a project's Git repository. Setup writes nothing into it.
+3. **Connect the AI you already use.** Pick a provider and sign in, or paste an API key.
+
+Then add a task, select it and press `a` to hand it to an agent.
+When the agent has a question or a result to review, it lands in the Inbox.
+
+The [user guide](https://tuile.dev/docs/) covers the rest, starting with [Get started](https://tuile.dev/docs/get-started/).
+
+## What you need
+
+tuile has no account of its own and no hosted task service.
+It uses the AI subscription or API key you already have.
+
+| For | Install |
+| --- | --- |
+| The Git page and pull requests | The [GitHub CLI](https://cli.github.com/), then run `gh auth login` |
+| Claude Code or Codex as your agent | The agent itself, signed in as usual |
+
+## Alpha status
+
+tuile is an alpha, used every day by its author.
+Expect rough edges, and back up your tasks before you rely on it:
 
 ```sh
-sbt doctor
-sbt
+tuile storage backup --file ~/Backups/tuile.sqlite3
 ```
 
-Switchbard explains setup before creating a workspace. GitHub features require an authenticated
-GitHub CLI (`gh`). Agent integrations use your existing agent tools and subscriptions.
-The agent side pane requires tmux. Installation does not install these tools or sign you in.
+Tasks and settings live in `~/.tuile`.
+[Your data](https://tuile.dev/docs/your-data/) lists what is stored, where, and what leaves your computer.
 
-In the app, press `?` for help, `u` for Inbox, `i` to capture an idea, and `b` to capture a bug.
-Use `sbt agent-prompt` for a setup prompt to give your agent. Optional agent instructions can be
-installed with `sbt skill install --agent both`.
+## Report a problem
 
-## Backups and support
+[Open an issue](https://github.com/Menantic-Creek-Capital/tuile-releases/issues) with the output of `tuile build-id`, what you did and what happened.
+If you attach a log folder, read it first: it can name your tasks and folders.
+[Troubleshooting](https://tuile.dev/docs/troubleshooting/) shows where the logs are.
 
-Before upgrading, back up important task data:
+## The terminal app
 
-```sh
-sbt --repo /path/to/project storage backup --file /path/to/backup.sqlite3
-```
-
-[Report a problem](https://github.com/Menantic-Creek-Capital/tuile-releases/issues) with your `sbt build-id`,
-OS, terminal, and reproduction steps. Review diagnostics before sharing; they may contain local paths
-or task content. In-app bug capture creates a local task and does not post a GitHub issue.
+tuile was called Switchbard, and its command `sbt`, until November 2026.
+The terminal releases through **v0.4.0-alpha.4** have been withdrawn.
+The Mac app now brings the `tuile` command with it, and there is no separate terminal download yet.
 
 ## Licensing
 
-The withdrawn historical releases, through **v0.4.0-alpha.4**, were published under MIT.
+Official builds are free to download and use, for personal or commercial work, on any number of your own devices, under [LICENSE-OFFICIAL-BUILDS](LICENSE-OFFICIAL-BUILDS).
+They may not be redistributed, modified or resold.
+The product source is private and is not licensed.
+
+The withdrawn releases, through **v0.4.0-alpha.4**, were published under MIT.
 The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
-Official builds are free to download and use, for personal or commercial work, on any number of your
-own devices, under [LICENSE-OFFICIAL-BUILDS](LICENSE-OFFICIAL-BUILDS). They may not be redistributed,
-modified or resold. The product source is private and is not licensed.
-
-The installer and documentation in this distribution repository have the separate limited permissions
-in [LICENSE](LICENSE). GitHub's automatically generated source archives contain only this distribution
-repository, not the Switchbard product source.
+The installer and documentation in this repository have the separate limited permissions in [LICENSE](LICENSE).
+GitHub's automatically generated source archives contain only this repository, not the tuile product source.
