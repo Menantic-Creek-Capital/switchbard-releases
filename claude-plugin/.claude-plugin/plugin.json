@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "tuile",
   "displayName": "tuile",
-  "version": "0.4.0",
+  "version": "0.6.6",
   "description": "Keep track of the work, not just the agents. Gives Claude Code your tuile tasks and work order: capture tasks, pick the next one, and write progress back to the task so it outlives the chat.",
   "author": {
     "name": "tuile",
