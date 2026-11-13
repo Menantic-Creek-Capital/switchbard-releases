@@ -1,0 +1,5 @@
+# GitHub adds "Source code" archives to every release, built from the tagged
+# commit. Only this page and the licenses go into them.
+* export-ignore
+/README.md -export-ignore
+/LICENSE* -export-ignore
