@@ -21,6 +21,19 @@ It checks for a new version every four hours and installs it when you click **Up
 
 There is no download for Intel Macs, Linux or Windows yet.
 
+## Use it from Claude Code
+
+The tuile plugin gives Claude Code your tasks and work order, with `/tuile:capture`, `/tuile:next` and `/tuile:handoff`.
+Install tuile first, then in Claude Code:
+
+```
+/plugin marketplace add Menantic-Creek-Capital/tuile-releases
+/plugin install tuile@tuile
+```
+
+Run `/tuile:setup` to check it can reach tuile.
+The plugin lives in [claude-plugin](claude-plugin).
+
 ## The first run
 
 The first time you open tuile it asks three things:
@@ -78,4 +91,5 @@ The withdrawn releases, through **v0.4.0-alpha.4**, were published under MIT.
 The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
 The installer and documentation in this repository have the separate limited permissions in [LICENSE](LICENSE).
+The Claude Code plugin in [claude-plugin](claude-plugin) is MIT licensed under [its own LICENSE](claude-plugin/LICENSE); the app it connects to is not.
 GitHub's automatically generated source archives contain only this repository, not the tuile product source.

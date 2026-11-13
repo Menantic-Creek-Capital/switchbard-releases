@@ -1,0 +1,16 @@
+#!/bin/sh
+for candidate in \
+    "$(command -v tuile 2>/dev/null)" \
+    "$HOME/.local/bin/tuile" \
+    "$HOME/.cargo/bin/tuile" \
+    /opt/homebrew/bin/tuile \
+    /usr/local/bin/tuile \
+    /Applications/*.app/Contents/Resources/bin/tuile \
+    "$HOME"/Applications/*.app/Contents/Resources/bin/tuile
+do
+    if [ -n "$candidate" ] && [ -f "$candidate" ] && [ -x "$candidate" ]; then
+        exec "$candidate" "$@"
+    fi
+done
+echo "tuile is not installed. Download it from https://tuile.dev/download (Macs with Apple silicon), open it once, then restart Claude Code." >&2
+exit 127
