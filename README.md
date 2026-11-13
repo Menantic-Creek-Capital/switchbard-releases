@@ -77,5 +77,5 @@ The product source is private and is not licensed.
 The withdrawn releases, through **v0.4.0-alpha.4**, were published under MIT.
 The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
-The installer and documentation in this repository have the separate limited permissions in [LICENSE](LICENSE).
-GitHub's automatically generated source archives contain only this repository, not the tuile product source.
+The documentation in this repository has the separate limited permissions in [LICENSE](LICENSE).
+The "Source code" archives GitHub adds to every release hold only this page and the licenses, never tuile's source.
