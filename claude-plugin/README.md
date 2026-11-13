@@ -8,7 +8,7 @@ This plugin connects Claude Code to it.
 In Claude Code:
 
 ```
-/plugin marketplace add Menantic-Creek-Capital/tuile-releases
+/plugin marketplace add tuilehq/tuile-releases
 /plugin install tuile@tuile
 ```
 

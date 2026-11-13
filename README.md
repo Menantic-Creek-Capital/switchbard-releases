@@ -11,7 +11,7 @@ The product source is private.
 
 ## Download for Mac
 
-1. Download the newest `tuile-<version>-macos-arm64.dmg` from [the latest release](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest).
+1. Download the newest `tuile-<version>-macos-arm64.dmg` from [the latest release](https://github.com/tuilehq/tuile-releases/releases/latest).
 2. Open it and drag **Tuile** to Applications.
 3. Open Tuile from Applications.
 
@@ -27,7 +27,7 @@ The tuile plugin gives Claude Code your tasks and work order, with `/tuile:captu
 Install tuile first, then in Claude Code:
 
 ```
-/plugin marketplace add Menantic-Creek-Capital/tuile-releases
+/plugin marketplace add tuilehq/tuile-releases
 /plugin install tuile@tuile
 ```
 
@@ -71,7 +71,7 @@ Tasks and settings live in `~/.tuile`.
 
 ## Report a problem
 
-[Open an issue](https://github.com/Menantic-Creek-Capital/tuile-releases/issues) with the output of `tuile build-id`, what you did and what happened.
+[Open an issue](https://github.com/tuilehq/tuile-releases/issues) with the output of `tuile build-id`, what you did and what happened.
 If you attach a log folder, read it first: it can name your tasks and folders.
 [Troubleshooting](https://tuile.dev/docs/troubleshooting/) shows where the logs are.
 
