@@ -42,7 +42,7 @@ Each time you open the window, tuile starts a folder in `~/.tuile/logs/`.
 ## Report a problem
 
 Open an issue at
-[tuile-releases](https://github.com/Menantic-Creek-Capital/tuile-releases/issues).
+[tuilehq/releases](https://github.com/tuilehq/releases/issues).
 Include the output of `tuile build-id`, what you did, and what happened.
 If you attach a log folder, read it first: it can name your tasks and
 folders.

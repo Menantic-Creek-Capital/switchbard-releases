@@ -63,6 +63,7 @@ hide_statuses = ["Done"]
 notify_agents = true
 agent_idle_stop_minutes = 30    # 0 never stops an idle agent
 agent_max_running = 16          # chat agents running at once, 1 to 64
+outside_answer_wait_minutes = 60  # 0 hands an unread answer to a new agent at once
 auto_clean_database_copies = true  # delete tuile's older copies of the database
 database_copies_kept = 2        # how many it keeps, 1 to 50
 ```

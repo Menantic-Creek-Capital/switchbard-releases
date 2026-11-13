@@ -9,8 +9,8 @@ summary: Install tuile on a Mac, or build it on Linux.
 tuile runs on Macs with Apple silicon.
 It is free to download and use, for personal or commercial work.
 
-1. Download [the newest tuile for Mac](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest/download/tuile-macos-arm64.dmg).
-   Earlier versions are on [releases](https://github.com/Menantic-Creek-Capital/tuile-releases/releases).
+1. Download [the newest tuile for Mac](https://github.com/tuilehq/releases/releases/latest/download/tuile-macos-arm64.dmg).
+   Earlier versions are on [releases](https://github.com/tuilehq/releases/releases).
 2. Open it and drag **Tuile** to Applications.
 3. Open Tuile from Applications.
 
