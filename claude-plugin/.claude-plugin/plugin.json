@@ -9,7 +9,7 @@
     "url": "https://tuile.dev"
   },
   "homepage": "https://tuile.dev",
-  "repository": "https://github.com/tuilehq/tuile-releases",
+  "repository": "https://github.com/tuilehq/releases",
   "license": "MIT",
   "keywords": ["tasks", "planning", "agents", "handoff", "inbox", "productivity"]
 }

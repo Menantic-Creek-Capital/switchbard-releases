@@ -8,7 +8,7 @@ This plugin connects Claude Code to it.
 In Claude Code:
 
 ```
-/plugin marketplace add tuilehq/tuile-releases
+/plugin marketplace add tuilehq/releases
 /plugin install tuile@tuile
 ```
 
