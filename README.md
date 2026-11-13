@@ -11,7 +11,7 @@ The product source is private.
 
 ## Download for Mac
 
-1. Download the newest `tuile-<version>-macos-arm64.dmg` from [the latest release](https://github.com/Menantic-Creek-Capital/tuile-releases/releases/latest).
+1. Download the newest `tuile-<version>-macos-arm64.dmg` from [the latest release](https://github.com/tuilehq/releases/releases/latest).
 2. Open it and drag **Tuile** to Applications.
 3. Open Tuile from Applications.
 
@@ -20,6 +20,19 @@ The app is signed and notarized by Apple, so it opens without a warning.
 It checks for a new version every four hours and installs it when you click **Update ready** or next quit.
 
 There is no download for Intel Macs, Linux or Windows yet.
+
+## Use it from Claude Code
+
+The tuile plugin gives Claude Code your tasks and work order, with `/tuile:capture`, `/tuile:next` and `/tuile:handoff`.
+Install tuile first, then in Claude Code:
+
+```
+/plugin marketplace add tuilehq/releases
+/plugin install tuile@tuile
+```
+
+Run `/tuile:setup` to check it can reach tuile.
+The plugin lives in [claude-plugin](claude-plugin).
 
 ## The first run
 
@@ -58,7 +71,7 @@ Tasks and settings live in `~/.tuile`.
 
 ## Report a problem
 
-[Open an issue](https://github.com/Menantic-Creek-Capital/tuile-releases/issues) with the output of `tuile build-id`, what you did and what happened.
+[Open an issue](https://github.com/tuilehq/releases/issues) with the output of `tuile build-id`, what you did and what happened.
 If you attach a log folder, read it first: it can name your tasks and folders.
 [Troubleshooting](https://tuile.dev/docs/troubleshooting/) shows where the logs are.
 
@@ -78,4 +91,5 @@ The withdrawn releases, through **v0.4.0-alpha.4**, were published under MIT.
 The [historical MIT notice](LICENSE-MIT) remains available for existing copies.
 
 The documentation in this repository has the separate limited permissions in [LICENSE](LICENSE).
+The Claude Code plugin in [claude-plugin](claude-plugin) is MIT licensed under [its own LICENSE](claude-plugin/LICENSE); the app it connects to is not.
 The "Source code" archives GitHub adds to every release hold only this page and the licenses, never tuile's source.

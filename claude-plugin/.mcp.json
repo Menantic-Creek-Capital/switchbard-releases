@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tuile": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/find-cli",
+      "args": ["mcp"]
+    }
+  }
+}
